@@ -8,9 +8,10 @@ void Main()
 {
     MooseSays("Ask me a question, any question!");
     bool isQuestionNotValid = String.IsNullOrWhiteSpace(Console.ReadLine());
-    if (!isQuestionNotValid)
+    while (!isQuestionNotValid)
     {
         MooseResponds();
+        isQuestionNotValid = String.IsNullOrWhiteSpace(Console.ReadLine());
     }
 }
 
