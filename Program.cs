@@ -74,7 +74,7 @@ void MooseResponds()
     };
 
     Random r = new Random();
-    int randomNumber = r.Next(0, 19);
+    int randomNumber = r.Next(0, 20);
 
     MooseSays(responses[randomNumber]);
 }
